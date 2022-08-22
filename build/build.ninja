@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Prueba
+# Project: wordle
 # Configurations: Debug
 # =============================================================================
 
@@ -40,237 +40,145 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /workspaces/C++/build/
-
-#############################################
-# Utility command for Experimental
-
-build Experimental: phony CMakeFiles/Experimental
-
-
-#############################################
-# Utility command for Nightly
-
-build Nightly: phony CMakeFiles/Nightly
-
-
-#############################################
-# Utility command for Continuous
-
-build Continuous: phony CMakeFiles/Continuous
-
-
-#############################################
-# Utility command for NightlyMemoryCheck
-
-build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
-
-
-#############################################
-# Utility command for NightlyStart
-
-build NightlyStart: phony CMakeFiles/NightlyStart
-
-
-#############################################
-# Utility command for NightlyUpdate
-
-build NightlyUpdate: phony CMakeFiles/NightlyUpdate
-
-
-#############################################
-# Utility command for NightlyConfigure
-
-build NightlyConfigure: phony CMakeFiles/NightlyConfigure
-
-
-#############################################
-# Utility command for NightlyBuild
-
-build NightlyBuild: phony CMakeFiles/NightlyBuild
-
-
-#############################################
-# Utility command for NightlyTest
-
-build NightlyTest: phony CMakeFiles/NightlyTest
-
-
-#############################################
-# Utility command for NightlyCoverage
-
-build NightlyCoverage: phony CMakeFiles/NightlyCoverage
-
-
-#############################################
-# Utility command for NightlyMemCheck
-
-build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
-
-
-#############################################
-# Utility command for NightlySubmit
-
-build NightlySubmit: phony CMakeFiles/NightlySubmit
-
-
-#############################################
-# Utility command for ExperimentalStart
-
-build ExperimentalStart: phony CMakeFiles/ExperimentalStart
-
-
-#############################################
-# Utility command for ExperimentalUpdate
-
-build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
-
-
-#############################################
-# Utility command for ExperimentalConfigure
-
-build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
-
-
-#############################################
-# Utility command for ExperimentalBuild
-
-build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
-
-
-#############################################
-# Utility command for ExperimentalTest
-
-build ExperimentalTest: phony CMakeFiles/ExperimentalTest
-
-
-#############################################
-# Utility command for ExperimentalCoverage
-
-build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
-
-
-#############################################
-# Utility command for ExperimentalMemCheck
-
-build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
-
-
-#############################################
-# Utility command for ExperimentalSubmit
-
-build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
-
-
-#############################################
-# Utility command for ContinuousStart
-
-build ContinuousStart: phony CMakeFiles/ContinuousStart
-
-
-#############################################
-# Utility command for ContinuousUpdate
-
-build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
-
-
-#############################################
-# Utility command for ContinuousConfigure
-
-build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
-
-
-#############################################
-# Utility command for ContinuousBuild
-
-build ContinuousBuild: phony CMakeFiles/ContinuousBuild
-
-
-#############################################
-# Utility command for ContinuousTest
-
-build ContinuousTest: phony CMakeFiles/ContinuousTest
-
-
-#############################################
-# Utility command for ContinuousCoverage
-
-build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
-
-
-#############################################
-# Utility command for ContinuousMemCheck
-
-build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
-
-
-#############################################
-# Utility command for ContinuousSubmit
-
-build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
-
 # =============================================================================
-# Object build statements for EXECUTABLE target main
+# Object build statements for EXECUTABLE target m
 
 
 #############################################
-# Order-only phony target for main
+# Order-only phony target for m
 
-build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+build cmake_object_order_depends_target_m: phony || CMakeFiles/m.dir
 
-build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_Debug /workspaces/C++/main.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir
+build CMakeFiles/m.dir/main.cpp.o: CXX_COMPILER__m_Debug /workspaces/C++/main.cpp || cmake_object_order_depends_target_m
+  DEP_FILE = CMakeFiles/m.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/m.dir
+  OBJECT_FILE_DIR = CMakeFiles/m.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main
+# Link build statements for EXECUTABLE target m
 
 
 #############################################
-# Link the executable main
+# Link the executable m
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o
+build m: CXX_EXECUTABLE_LINKER__m_Debug CMakeFiles/m.dir/main.cpp.o
   FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_DIR = CMakeFiles/m.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = main
-  TARGET_PDB = main.dbg
+  TARGET_FILE = m
+  TARGET_PDB = m.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target calc
+# Object build statements for EXECUTABLE target c
 
 
 #############################################
-# Order-only phony target for calc
+# Order-only phony target for c
 
-build cmake_object_order_depends_target_calc: phony || CMakeFiles/calc.dir
+build cmake_object_order_depends_target_c: phony || CMakeFiles/c.dir
 
-build CMakeFiles/calc.dir/calculadora.cpp.o: CXX_COMPILER__calc_Debug /workspaces/C++/calculadora.cpp || cmake_object_order_depends_target_calc
-  DEP_FILE = CMakeFiles/calc.dir/calculadora.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/calc.dir
-  OBJECT_FILE_DIR = CMakeFiles/calc.dir
+build CMakeFiles/c.dir/calculadora.cpp.o: CXX_COMPILER__c_Debug /workspaces/C++/calculadora.cpp || cmake_object_order_depends_target_c
+  DEP_FILE = CMakeFiles/c.dir/calculadora.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/c.dir
+  OBJECT_FILE_DIR = CMakeFiles/c.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target calc
+# Link build statements for EXECUTABLE target c
 
 
 #############################################
-# Link the executable calc
+# Link the executable c
 
-build calc: CXX_EXECUTABLE_LINKER__calc_Debug CMakeFiles/calc.dir/calculadora.cpp.o
+build c: CXX_EXECUTABLE_LINKER__c_Debug CMakeFiles/c.dir/calculadora.cpp.o
   FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/calc.dir
+  OBJECT_DIR = CMakeFiles/c.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = calc
-  TARGET_PDB = calc.dbg
+  TARGET_FILE = c
+  TARGET_PDB = c.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target wordle
+
+
+#############################################
+# Order-only phony target for wordle
+
+build cmake_object_order_depends_target_wordle: phony || CMakeFiles/wordle.dir
+
+build CMakeFiles/wordle.dir/Wordle/wordle.cpp.o: CXX_COMPILER__wordle_Debug /workspaces/C++/Wordle/wordle.cpp || cmake_object_order_depends_target_wordle
+  DEP_FILE = CMakeFiles/wordle.dir/Wordle/wordle.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/wordle.dir
+  OBJECT_FILE_DIR = CMakeFiles/wordle.dir/Wordle
+
+build CMakeFiles/wordle.dir/wordle/funciones.cpp.o: CXX_COMPILER__wordle_Debug /workspaces/C++/wordle/funciones.cpp || cmake_object_order_depends_target_wordle
+  DEP_FILE = CMakeFiles/wordle.dir/wordle/funciones.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/wordle.dir
+  OBJECT_FILE_DIR = CMakeFiles/wordle.dir/wordle
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target wordle
+
+
+#############################################
+# Link the executable wordle
+
+build wordle: CXX_EXECUTABLE_LINKER__wordle_Debug CMakeFiles/wordle.dir/Wordle/wordle.cpp.o CMakeFiles/wordle.dir/wordle/funciones.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/wordle.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = wordle
+  TARGET_PDB = wordle.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tests
+
+
+#############################################
+# Order-only phony target for tests
+
+build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles/tests.dir/tests/tests.cpp.o: CXX_COMPILER__tests_Debug /workspaces/C++/tests/tests.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/tests.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
+
+build CMakeFiles/tests.dir/Wordle/funciones.cpp.o: CXX_COMPILER__tests_Debug /workspaces/C++/Wordle/funciones.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/Wordle/funciones.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/Wordle
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tests
+
+
+#############################################
+# Link the executable tests
+
+build tests tests[1]_tests.cmake | ${cmake_ninja_workdir}tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/tests.cpp.o CMakeFiles/tests.dir/Wordle/funciones.cpp.o | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_maind.a  lib/libgtestd.a
+  OBJECT_DIR = CMakeFiles/tests.dir
+  POST_BUILD = cd /workspaces/C++/build && /usr/bin/cmake -D TEST_TARGET=tests -D TEST_EXECUTABLE=/workspaces/C++/build/tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/workspaces/C++/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=/workspaces/C++/build/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = tests
+  TARGET_PDB = tests.dbg
 
 
 #############################################
@@ -333,230 +241,510 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles/Experimental
+# Utility command for list_install_components
 
-build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D Experimental
-  pool = console
+build list_install_components: phony
 
 
 #############################################
-# Custom command for CMakeFiles/Nightly
+# Utility command for install
 
-build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D Nightly
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
   pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
 
 
 #############################################
-# Custom command for CMakeFiles/Continuous
+# Utility command for install/local
 
-build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D Continuous
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
   pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyMemoryCheck
+# Utility command for install/strip
 
-build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyMemoryCheck
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
   pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /workspaces/C++/CMakeLists.txt
+# =============================================================================
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyStart
+# Utility command for package
 
-build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyStart
+build _deps/googletest-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/package: phony _deps/googletest-build/CMakeFiles/package.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyUpdate
+# Utility command for package_source
 
-build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyUpdate
+build _deps/googletest-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /workspaces/C++/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/package_source: phony _deps/googletest-build/CMakeFiles/package_source.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyConfigure
+# Utility command for test
 
-build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyConfigure
+build _deps/googletest-build/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/test: phony _deps/googletest-build/CMakeFiles/test.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyBuild
+# Utility command for edit_cache
 
-build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyBuild
-  pool = console
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-
-#############################################
-# Custom command for CMakeFiles/NightlyTest
-
-build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyTest
-  pool = console
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyCoverage
+# Utility command for rebuild_cache
 
-build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyCoverage
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/cmake --regenerate-during-build -S/workspaces/C++ -B/workspaces/C++/build
+  DESC = Running CMake to regenerate build system...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyMemCheck
+# Utility command for list_install_components
 
-build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlyMemCheck
-  pool = console
+build _deps/googletest-build/list_install_components: phony
 
 
 #############################################
-# Custom command for CMakeFiles/NightlySubmit
+# Utility command for install
 
-build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D NightlySubmit
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalStart
+# Utility command for install/local
 
-build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalStart
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalUpdate
+# Utility command for install/strip
 
-build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalUpdate
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /workspaces/C++/build/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalConfigure
+# Order-only phony target for gmock
 
-build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalConfigure
-  pool = console
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalBuild
-
-build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalBuild
-  pool = console
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20
+  INCLUDES = -I/workspaces/C++/build/_deps/googletest-src/googlemock/include -I/workspaces/C++/build/_deps/googletest-src/googlemock -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
 
 
-#############################################
-# Custom command for CMakeFiles/ExperimentalTest
-
-build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalTest
-  pool = console
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
 
 
 #############################################
-# Custom command for CMakeFiles/ExperimentalCoverage
+# Link the static library lib/libgmockd.a
 
-build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalCoverage
-  pool = console
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmockd.a
+  TARGET_PDB = gmockd.a.dbg
 
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalMemCheck
-
-build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalMemCheck
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalSubmit
-
-build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ExperimentalSubmit
-  pool = console
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousStart
+# Order-only phony target for gmock_main
 
-build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousStart
-  pool = console
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-
-#############################################
-# Custom command for CMakeFiles/ContinuousUpdate
-
-build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousUpdate
-  pool = console
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20
+  INCLUDES = -isystem /workspaces/C++/build/_deps/googletest-src/googlemock/include -isystem /workspaces/C++/build/_deps/googletest-src/googlemock -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
 
 
-#############################################
-# Custom command for CMakeFiles/ContinuousConfigure
-
-build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousConfigure
-  pool = console
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousBuild
+# Link the static library lib/libgmock_maind.a
 
-build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousBuild
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousTest
-
-build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousTest
-  pool = console
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmockd.a lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_maind.a
+  TARGET_PDB = gmock_maind.a.dbg
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousCoverage
+# Utility command for package
 
-build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousCoverage
+build _deps/googletest-build/googlemock/CMakeFiles/package.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/package: phony _deps/googletest-build/googlemock/CMakeFiles/package.util
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousMemCheck
+# Utility command for package_source
 
-build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousMemCheck
+build _deps/googletest-build/googlemock/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /workspaces/C++/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/package_source: phony _deps/googletest-build/googlemock/CMakeFiles/package_source.util
 
 
 #############################################
-# Custom command for CMakeFiles/ContinuousSubmit
+# Utility command for test
 
-build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /workspaces/C++/build && /usr/bin/ctest -D ContinuousSubmit
+build _deps/googletest-build/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
   pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/test: phony _deps/googletest-build/googlemock/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/cmake --regenerate-during-build -S/workspaces/C++ -B/workspaces/C++/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-build/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-build/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /workspaces/C++/build/_deps/googletest-src/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /workspaces/C++/build/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20
+  INCLUDES = -I/workspaces/C++/build/_deps/googletest-src/googletest/include -I/workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtestd.a
+
+build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtestd.a
+  TARGET_PDB = gtestd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /workspaces/C++/build/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20
+  INCLUDES = -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_maind.a
+
+build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_maind.a
+  TARGET_PDB = gtest_maind.a.dbg
+
+
+#############################################
+# Utility command for package
+
+build _deps/googletest-build/googletest/CMakeFiles/package.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/package: phony _deps/googletest-build/googletest/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/googletest-build/googletest/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /workspaces/C++/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/package_source: phony _deps/googletest-build/googletest/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/test: phony _deps/googletest-build/googletest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/cmake --regenerate-during-build -S/workspaces/C++ -B/workspaces/C++/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install: phony _deps/googletest-build/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/local: phony _deps/googletest-build/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /workspaces/C++/build/_deps/googletest-build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
+
+build gmock: phony lib/libgmockd.a
+
+build gmock_main: phony lib/libgmock_maind.a
+
+build gtest: phony lib/libgtestd.a
+
+build gtest_main: phony lib/libgtest_maind.a
+
+build libgmock_maind.a: phony lib/libgmock_maind.a
+
+build libgmockd.a: phony lib/libgmockd.a
+
+build libgtest_maind.a: phony lib/libgtest_maind.a
+
+build libgtestd.a: phony lib/libgtestd.a
 
 # =============================================================================
 # Folder targets.
@@ -566,12 +754,28 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /workspaces/C++/build
 
-build all: phony main calc
+build all: phony m c wordle tests _deps/googletest-build/all
 
 # =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+
+#############################################
+# Folder: /workspaces/C++/build/_deps/googletest-build
+
+build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /workspaces/C++/build/_deps/googletest-build/googlemock
+
+build _deps/googletest-build/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a _deps/googletest-build/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /workspaces/C++/build/_deps/googletest-build/googletest
+
+build _deps/googletest-build/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
 
 # =============================================================================
 # Built-in targets
@@ -580,14 +784,14 @@ build all: phony main calc
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CPack.cmake /usr/share/cmake-3.22/Modules/CPackComponent.cmake /usr/share/cmake-3.22/Modules/CTest.cmake /usr/share/cmake-3.22/Modules/CTestTargets.cmake /usr/share/cmake-3.22/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CPack.cmake /usr/share/cmake-3.22/Modules/CPackComponent.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/GoogleTest.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.22/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CPack.cmake /usr/share/cmake-3.22/Modules/CPackComponent.cmake /usr/share/cmake-3.22/Modules/CTest.cmake /usr/share/cmake-3.22/Modules/CTestTargets.cmake /usr/share/cmake-3.22/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CPack.cmake /usr/share/cmake-3.22/Modules/CPackComponent.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/GoogleTest.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.22/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################

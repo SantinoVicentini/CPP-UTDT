@@ -1,12 +1,52 @@
 [
 {
   "directory": "/workspaces/C++/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/main.dir/main.cpp.o -c /workspaces/C++/main.cpp",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/m.dir/main.cpp.o -c /workspaces/C++/main.cpp",
   "file": "/workspaces/C++/main.cpp"
 },
 {
   "directory": "/workspaces/C++/build",
-  "command": "/usr/bin/g++ -g -o CMakeFiles/calc.dir/calculadora.cpp.o -c /workspaces/C++/calculadora.cpp",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/c.dir/calculadora.cpp.o -c /workspaces/C++/calculadora.cpp",
   "file": "/workspaces/C++/calculadora.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/wordle.dir/Wordle/wordle.cpp.o -c /workspaces/C++/Wordle/wordle.cpp",
+  "file": "/workspaces/C++/Wordle/wordle.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/wordle.dir/wordle/funciones.cpp.o -c /workspaces/C++/wordle/funciones.cpp",
+  "file": "/workspaces/C++/wordle/funciones.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest -g -std=gnu++20 -o CMakeFiles/tests.dir/tests/tests.cpp.o -c /workspaces/C++/tests/tests.cpp",
+  "file": "/workspaces/C++/tests/tests.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest -g -std=gnu++20 -o CMakeFiles/tests.dir/Wordle/funciones.cpp.o -c /workspaces/C++/Wordle/funciones.cpp",
+  "file": "/workspaces/C++/Wordle/funciones.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -I/workspaces/C++/build/_deps/googletest-src/googlemock/include -I/workspaces/C++/build/_deps/googletest-src/googlemock -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -isystem /workspaces/C++/build/_deps/googletest-src/googlemock/include -isystem /workspaces/C++/build/_deps/googletest-src/googlemock -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/workspaces/C++/build/_deps/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -I/workspaces/C++/build/_deps/googletest-src/googletest/include -I/workspaces/C++/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /workspaces/C++/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/workspaces/C++/build/_deps/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -isystem /workspaces/C++/build/_deps/googletest-src/googletest/include -isystem /workspaces/C++/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++20 -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /workspaces/C++/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/workspaces/C++/build/_deps/googletest-src/googletest/src/gtest_main.cc"
 }
 ]

@@ -1,0 +1,5 @@
+aviso
+banco
+bolsa
+buzon
+cajon

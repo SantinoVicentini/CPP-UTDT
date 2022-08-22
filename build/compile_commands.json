@@ -1,13 +1,13 @@
 [
 {
   "directory": "/workspaces/C++/build",
-  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/m.dir/main.cpp.o -c /workspaces/C++/main.cpp",
-  "file": "/workspaces/C++/main.cpp"
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/m.dir/Ejercicio1/main.cpp.o -c /workspaces/C++/Ejercicio1/main.cpp",
+  "file": "/workspaces/C++/Ejercicio1/main.cpp"
 },
 {
   "directory": "/workspaces/C++/build",
-  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/c.dir/calculadora.cpp.o -c /workspaces/C++/calculadora.cpp",
-  "file": "/workspaces/C++/calculadora.cpp"
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/c.dir/Ejercicio1/calculadora.cpp.o -c /workspaces/C++/Ejercicio1/calculadora.cpp",
+  "file": "/workspaces/C++/Ejercicio1/calculadora.cpp"
 },
 {
   "directory": "/workspaces/C++/build",

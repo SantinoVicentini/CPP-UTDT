@@ -49,11 +49,11 @@ cmake_ninja_workdir = /workspaces/C++/build/
 
 build cmake_object_order_depends_target_m: phony || CMakeFiles/m.dir
 
-build CMakeFiles/m.dir/main.cpp.o: CXX_COMPILER__m_Debug /workspaces/C++/main.cpp || cmake_object_order_depends_target_m
-  DEP_FILE = CMakeFiles/m.dir/main.cpp.o.d
+build CMakeFiles/m.dir/Ejercicio1/main.cpp.o: CXX_COMPILER__m_Debug /workspaces/C++/Ejercicio1/main.cpp || cmake_object_order_depends_target_m
+  DEP_FILE = CMakeFiles/m.dir/Ejercicio1/main.cpp.o.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/m.dir
-  OBJECT_FILE_DIR = CMakeFiles/m.dir
+  OBJECT_FILE_DIR = CMakeFiles/m.dir/Ejercicio1
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/m.dir/main.cpp.o: CXX_COMPILER__m_Debug /workspaces/C++/main.cp
 #############################################
 # Link the executable m
 
-build m: CXX_EXECUTABLE_LINKER__m_Debug CMakeFiles/m.dir/main.cpp.o
+build m: CXX_EXECUTABLE_LINKER__m_Debug CMakeFiles/m.dir/Ejercicio1/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/m.dir
   POST_BUILD = :
@@ -80,11 +80,11 @@ build m: CXX_EXECUTABLE_LINKER__m_Debug CMakeFiles/m.dir/main.cpp.o
 
 build cmake_object_order_depends_target_c: phony || CMakeFiles/c.dir
 
-build CMakeFiles/c.dir/calculadora.cpp.o: CXX_COMPILER__c_Debug /workspaces/C++/calculadora.cpp || cmake_object_order_depends_target_c
-  DEP_FILE = CMakeFiles/c.dir/calculadora.cpp.o.d
+build CMakeFiles/c.dir/Ejercicio1/calculadora.cpp.o: CXX_COMPILER__c_Debug /workspaces/C++/Ejercicio1/calculadora.cpp || cmake_object_order_depends_target_c
+  DEP_FILE = CMakeFiles/c.dir/Ejercicio1/calculadora.cpp.o.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/c.dir
-  OBJECT_FILE_DIR = CMakeFiles/c.dir
+  OBJECT_FILE_DIR = CMakeFiles/c.dir/Ejercicio1
 
 
 # =============================================================================
@@ -94,7 +94,7 @@ build CMakeFiles/c.dir/calculadora.cpp.o: CXX_COMPILER__c_Debug /workspaces/C++/
 #############################################
 # Link the executable c
 
-build c: CXX_EXECUTABLE_LINKER__c_Debug CMakeFiles/c.dir/calculadora.cpp.o
+build c: CXX_EXECUTABLE_LINKER__c_Debug CMakeFiles/c.dir/Ejercicio1/calculadora.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/c.dir
   POST_BUILD = :

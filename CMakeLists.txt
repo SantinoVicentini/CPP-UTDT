@@ -13,8 +13,8 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(m main.cpp)
-add_executable(c calculadora.cpp)
+add_executable(m Ejercicio1/main.cpp)
+add_executable(c Ejercicio1/calculadora.cpp)
 
 
 add_executable(

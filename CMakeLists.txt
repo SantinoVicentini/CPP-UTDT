@@ -5,6 +5,8 @@ include(CTest)
 enable_testing()
 
 add_executable(main main.cpp)
+add_executable(calc calculadora.cpp)
+
 
 
 

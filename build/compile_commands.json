@@ -1,7 +1,12 @@
 [
 {
-  "directory": "C:/Users/vicen/OneDrive - Universidad Torcuato Di Tella/Desktop/TD3/C++/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\main.cpp.obj -c \"C:\\Users\\vicen\\OneDrive - Universidad Torcuato Di Tella\\Desktop\\TD3\\C++\\main.cpp\"",
-  "file": "C:/Users/vicen/OneDrive - Universidad Torcuato Di Tella/Desktop/TD3/C++/main.cpp"
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/main.dir/main.cpp.o -c /workspaces/C++/main.cpp",
+  "file": "/workspaces/C++/main.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/calc.dir/calculadora.cpp.o -c /workspaces/C++/calculadora.cpp",
+  "file": "/workspaces/C++/calculadora.cpp"
 }
 ]

@@ -15,6 +15,10 @@ enable_testing()
 
 add_executable(m Ejercicio1/main.cpp)
 add_executable(c Ejercicio1/calculadora.cpp)
+add_executable(t Recursion/teo1.cpp)
+add_executable(guia5 Recursion/guia5.cpp)
+
+
 
 
 add_executable(

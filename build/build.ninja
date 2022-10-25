@@ -103,6 +103,68 @@ build c: CXX_EXECUTABLE_LINKER__c_Debug CMakeFiles/c.dir/Ejercicio1/calculadora.
   TARGET_PDB = c.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target t
+
+
+#############################################
+# Order-only phony target for t
+
+build cmake_object_order_depends_target_t: phony || CMakeFiles/t.dir
+
+build CMakeFiles/t.dir/Recursion/teo1.cpp.o: CXX_COMPILER__t_Debug /workspaces/C++/Recursion/teo1.cpp || cmake_object_order_depends_target_t
+  DEP_FILE = CMakeFiles/t.dir/Recursion/teo1.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/t.dir
+  OBJECT_FILE_DIR = CMakeFiles/t.dir/Recursion
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t
+
+
+#############################################
+# Link the executable t
+
+build t: CXX_EXECUTABLE_LINKER__t_Debug CMakeFiles/t.dir/Recursion/teo1.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/t.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = t
+  TARGET_PDB = t.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target guia5
+
+
+#############################################
+# Order-only phony target for guia5
+
+build cmake_object_order_depends_target_guia5: phony || CMakeFiles/guia5.dir
+
+build CMakeFiles/guia5.dir/Recursion/guia5.cpp.o: CXX_COMPILER__guia5_Debug /workspaces/C++/Recursion/guia5.cpp || cmake_object_order_depends_target_guia5
+  DEP_FILE = CMakeFiles/guia5.dir/Recursion/guia5.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/guia5.dir
+  OBJECT_FILE_DIR = CMakeFiles/guia5.dir/Recursion
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target guia5
+
+
+#############################################
+# Link the executable guia5
+
+build guia5: CXX_EXECUTABLE_LINKER__guia5_Debug CMakeFiles/guia5.dir/Recursion/guia5.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/guia5.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = guia5
+  TARGET_PDB = guia5.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target wordle
 
 
@@ -754,7 +816,7 @@ build libgtestd.a: phony lib/libgtestd.a
 #############################################
 # Folder: /workspaces/C++/build
 
-build all: phony m c wordle tests _deps/googletest-build/all
+build all: phony m c t guia5 wordle tests _deps/googletest-build/all
 
 # =============================================================================
 

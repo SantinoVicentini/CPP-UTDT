@@ -23,7 +23,9 @@
 						0,
 						5,
 						6,
-						7
+						7,
+						8,
+						9
 					]
 				},
 				{
@@ -99,7 +101,9 @@
 						0,
 						5,
 						6,
-						7
+						7,
+						8,
+						9
 					]
 				},
 				{
@@ -184,6 +188,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "guia5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-guia5-Debug-c866c7f78ff82c70c047.json",
+					"name" : "guia5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "m::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-m-Debug-3f4cd5e4b44842319b96.json",
 					"name" : "m",
@@ -191,15 +202,22 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "t::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t-Debug-04fea3a62ff414d4addd.json",
+					"name" : "t",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tests-Debug-e29af65d1c1ccfca1b90.json",
+					"jsonFile" : "target-tests-Debug-9f6a123d86b837b31b76.json",
 					"name" : "tests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "wordle::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wordle-Debug-8b3c0e9384d2b2a2868a.json",
+					"jsonFile" : "target-wordle-Debug-ce8f9d4b6c6bd7c96662.json",
 					"name" : "wordle",
 					"projectIndex" : 0
 				}

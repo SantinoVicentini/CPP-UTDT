@@ -11,6 +11,16 @@
 },
 {
   "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/t.dir/Recursion/teo1.cpp.o -c /workspaces/C++/Recursion/teo1.cpp",
+  "file": "/workspaces/C++/Recursion/teo1.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/guia5.dir/Recursion/guia5.cpp.o -c /workspaces/C++/Recursion/guia5.cpp",
+  "file": "/workspaces/C++/Recursion/guia5.cpp"
+},
+{
+  "directory": "/workspaces/C++/build",
   "command": "/usr/bin/g++ -g -std=gnu++20 -o CMakeFiles/wordle.dir/Wordle/wordle.cpp.o -c /workspaces/C++/Wordle/wordle.cpp",
   "file": "/workspaces/C++/Wordle/wordle.cpp"
 },

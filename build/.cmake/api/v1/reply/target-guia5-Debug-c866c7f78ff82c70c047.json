@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "wordle"
+			"path" : "guia5"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 20,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -52,12 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "wordle::@6890427a1f51a3e7e1df",
+	"id" : "guia5::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -73,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "wordle",
-	"nameOnDisk" : "wordle",
+	"name" : "guia5",
+	"nameOnDisk" : "guia5",
 	"paths" : 
 	{
 		"build" : ".",
@@ -86,8 +85,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -96,13 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Wordle/wordle.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "wordle/funciones.cpp",
+			"path" : "Recursion/guia5.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

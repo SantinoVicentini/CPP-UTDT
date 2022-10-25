@@ -1,5 +1,7 @@
 /workspaces/C++/build/CMakeFiles/m.dir
 /workspaces/C++/build/CMakeFiles/c.dir
+/workspaces/C++/build/CMakeFiles/t.dir
+/workspaces/C++/build/CMakeFiles/guia5.dir
 /workspaces/C++/build/CMakeFiles/wordle.dir
 /workspaces/C++/build/CMakeFiles/tests.dir
 /workspaces/C++/build/CMakeFiles/package.dir

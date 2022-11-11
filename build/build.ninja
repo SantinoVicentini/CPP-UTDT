@@ -177,6 +177,74 @@ build guia5: CXX_EXECUTABLE_LINKER__guia5_Debug CMakeFiles/guia5.dir/Recursion/g
   TARGET_PDB = guia5.pdb
 
 # =============================================================================
+# Object build statements for EXECUTABLE target arboles
+
+
+#############################################
+# Order-only phony target for arboles
+
+build cmake_object_order_depends_target_arboles: phony || CMakeFiles/arboles.dir
+
+build CMakeFiles/arboles.dir/Recursion/arboles.cpp.o: CXX_COMPILER__arboles_Debug /workspaces/C++/Recursion/arboles.cpp || cmake_object_order_depends_target_arboles
+  DEP_FILE = CMakeFiles/arboles.dir/Recursion/arboles.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/arboles.dir
+  OBJECT_FILE_DIR = CMakeFiles/arboles.dir/Recursion
+  TARGET_COMPILE_PDB = CMakeFiles/arboles.dir/
+  TARGET_PDB = arboles.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target arboles
+
+
+#############################################
+# Link the executable arboles
+
+build arboles: CXX_EXECUTABLE_LINKER__arboles_Debug CMakeFiles/arboles.dir/Recursion/arboles.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/arboles.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/arboles.dir/
+  TARGET_FILE = arboles
+  TARGET_PDB = arboles.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target heapsort
+
+
+#############################################
+# Order-only phony target for heapsort
+
+build cmake_object_order_depends_target_heapsort: phony || CMakeFiles/heapsort.dir
+
+build CMakeFiles/heapsort.dir/Recursion/heapsort.cpp.o: CXX_COMPILER__heapsort_Debug /workspaces/C++/Recursion/heapsort.cpp || cmake_object_order_depends_target_heapsort
+  DEP_FILE = CMakeFiles/heapsort.dir/Recursion/heapsort.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles/heapsort.dir
+  OBJECT_FILE_DIR = CMakeFiles/heapsort.dir/Recursion
+  TARGET_COMPILE_PDB = CMakeFiles/heapsort.dir/
+  TARGET_PDB = heapsort.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target heapsort
+
+
+#############################################
+# Link the executable heapsort
+
+build heapsort: CXX_EXECUTABLE_LINKER__heapsort_Debug CMakeFiles/heapsort.dir/Recursion/heapsort.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/heapsort.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/heapsort.dir/
+  TARGET_FILE = heapsort
+  TARGET_PDB = heapsort.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target wordle
 
 
@@ -850,7 +918,7 @@ build libgtestd.a: phony lib/libgtestd.a
 #############################################
 # Folder: /workspaces/C++/build
 
-build all: phony m c t guia5 wordle tests _deps/googletest-build/all
+build all: phony m c t guia5 arboles heapsort wordle tests _deps/googletest-build/all
 
 # =============================================================================
 

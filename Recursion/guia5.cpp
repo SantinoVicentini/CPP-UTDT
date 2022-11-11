@@ -153,6 +153,21 @@ int vector_montania(vector<int> m, unsigned int desde, unsigned int hasta){
    }
 }
 
+//ejercicio 9
+// a)
+void selection_sort(vector<int> & v){
+    int min;
+    for(int i=0; i<v.size(); i++){
+        min = i;
+        for(int j= i+1; j<v.size(); j++){
+            if(v[j] < v[min]){
+                min = j;
+            }
+        }
+        swap(v[i], v[min]);
+    }
+}
+
 
 int main(){
     int a = 8;
@@ -191,4 +206,12 @@ int main(){
     cout << "resultado de elevar n por m: " << potencia(n, m) << endl;
     // b)
     cout << "vector montania (pico): " << vector_montania(p, 0, 4) << endl;
+
+    vector<int> h = {59,7,388,41,2,280,50,123};
+    selection_sort(h);
+    cout<<"Sorted Array :" << endl;
+    for(int z = 0; z<h.size(); z++){
+        cout<< h.at(z) << "; ";
+    }
+
 }

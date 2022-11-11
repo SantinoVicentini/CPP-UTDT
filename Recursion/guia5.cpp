@@ -168,12 +168,109 @@ void selection_sort(vector<int> & v){
     }
 }
 
+void insertion_sort(vector<int> & v){
+    int pos;
+    for(int i=0; i<v.size(); i++){
+        pos = i;
+        while((pos>0) && v[pos] < v[pos-1]){
+            swap(v[pos], v[pos-1]);
+            pos--;
+        }
+    }
+}
+
+// ejercicio 10
+
+vector<int> merge(const vector<int> & v1, const vector<int> & v2){
+    int i = 0;
+    int j = 0;
+    vector<int> res;
+    while(i < v1.size() && j < v2.size()){
+        if(v1[i] < v2[j]){
+            res.push_back(v1[i]);
+            i++;
+        }
+        else{
+            res.push_back(v2[j]);
+            j++;
+        }
+    }
+    while(i<v1.size()){
+        res.push_back(v1[i]);
+        i++;
+    }
+    while(j<v2.size()){
+        res.push_back(v2[j]);
+        j++;
+    }
+    return res;
+}
+
+int merge2(const vector<int> & v1, const vector<int> & v2){
+    int res = 0;
+    int k = v1.size()-1;
+    int x = v2.size()-1;
+    for(int i=0; i<v1.size(); i++){
+        for(int j=0; j<v2.size(); j++){
+            if(v1[i] > v2[j]){
+                res++;
+            }
+        }
+    }
+    while((k>0) && v1[k] < v1[k-1]){
+        res++;
+        k--;
+    }
+    while((x>0) && v2[x] < v2[x-1]){
+        res++;
+        x--;
+    }
+    return res;
+}
+
+vector<int> mergesort(const vector<int> & v, int i, int j){
+    if(j-i == 0){
+        return {};
+    }
+    if (j-i == 1){
+        return {v[i]};
+    }
+    int med = (i+j)/2;
+    vector<int> izq = mergesort(v, i, med);
+    vector<int> der = mergesort(v, med, j);
+
+    return merge(izq, der);
+}
+
+int mergesort2(const vector<int> & v, int i, int j){
+    if(j-i == 0){
+        return 0;
+    }
+    if (j-i == 1){
+        return 0;
+    }
+    int med = (i+j)/2;
+    vector<int> izq = mergesort(v, i, med);
+    vector<int> der = mergesort(v, med, j);
+
+    return merge2(izq, der);
+}
+
+
+
 
 int main(){
     int a = 8;
     int b = 67;
     int n = 2;
     int m = 10;
+    vector<int> ms = {12,10,8,5,3,1};
+    vector<int> inver = {12,10,8,5,3,1};
+    vector<int> ms2 = {1,3,12};
+    vector<int> ms3 = {5,8,10};
+    vector<int> h = {59,7,388,41,2,280,50,123};
+    vector<int> hp = {5,3,6,1,7,9};
+    vector<int> hpv = {5,3,6,2,7,9,1};
     vector<int> v = {1,1,1,0,1};
     vector<int> p = {0,1,2,1};
     vector<int> vr = solo_positivos(p);
@@ -207,11 +304,29 @@ int main(){
     // b)
     cout << "vector montania (pico): " << vector_montania(p, 0, 4) << endl;
 
-    vector<int> h = {59,7,388,41,2,280,50,123};
-    selection_sort(h);
-    cout<<"Sorted Array :" << endl;
+
+    insertion_sort(h);
+    cout<<"insertion Sorted Array :" << endl;
     for(int z = 0; z<h.size(); z++){
-        cout<< h.at(z) << "; ";
+        cout<< h.at(z) << "; "<< endl;
     }
+
+    selection_sort(hp);
+    cout<<"selection Sorted Array :" << endl;
+    for(int z = 0; z<hp.size(); z++){
+        cout<< hp.at(z) << "; "<< endl;
+    }
+
+    mergesort(ms, 0, 6);
+    cout<<"merge Sorted Array :" << endl;
+    for(int z = 0; z<ms.size(); z++){
+        cout<< ms.at(z) << "; "<< endl;
+    }
+    //ejercicio 10
+    //b
+    cout << "inversiones " << merge2(ms2, ms3) << endl;
+    cout << "inversiones " << mergesort2(inver, 0, 6) << endl;
+    
+
 
 }
